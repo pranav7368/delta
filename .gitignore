@@ -1,0 +1,20 @@
+# Ignore everything in the home directory
+/*
+
+# But keep this gitignore itself
+!.gitignore
+
+# Allow traversal into Desktop
+!/Desktop/
+
+# Ignore everything in Desktop except the project folder
+Desktop/*
+!Desktop/New folder/
+
+# Ignore everything in New folder except kyc-system and this gitignore
+Desktop/New folder/*
+!Desktop/New folder/kyc-system/
+!Desktop/New folder/.gitignore
+
+# Ignore the .claude folder (personal AI config)
+Desktop/New folder/.claude/
